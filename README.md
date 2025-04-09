@@ -1,4 +1,4 @@
-# Go2 Front Camera Feed
+# Single launch file for Go2 Waypoint Navigation Project
 
 ## Package Structure
 
