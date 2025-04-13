@@ -30,13 +30,19 @@ def generate_launch_description():
             get_package_share_directory('go2_camera'), 'launch'),
             '/camera_feed.launch.py'])
         )
+    lidar_odom = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource([os.path.join(
+            get_package_share_directory('go2_lidar_odom'), 'launch'),
+            '/lidar_odom.launch.py'])
+        )
 
 
     return LaunchDescription([
         go2_start,
         gps,
         imu,
-        cam
+        cam,
+        lidar_odom
     ])
 
 
